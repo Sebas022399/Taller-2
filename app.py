@@ -13,7 +13,7 @@ app = dash.Dash(
     __name__,
     meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
 )
-app.title = "Dashboard energia"
+app.title = "Dashboard de energia"
 
 server = app.server
 app.config.suppress_callback_exceptions = True
@@ -123,7 +123,7 @@ def generate_control_card():
         children=[
 
             # Fecha inicial
-            html.P("Seleccionar fecha y hora inicial:"),
+            html.P("Seleccione fecha y hora inicial:"),
 
             html.Div(
                 id="componentes-fecha-inicial",
